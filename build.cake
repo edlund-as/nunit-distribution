@@ -2,6 +2,11 @@
 #addin "nuget:?package=NuGet.Core&version=2.12.0"
 #addin "nuget:?package=Cake.FileHelpers&version=1.0.4"
 
+// Maybe these are needed instead:
+// #addin "nuget:?package=Cake.ExtendedNuGet"
+// #addin "nuget:?package=NuGet.Core"
+// #addin "Cake.FileHelpers"
+
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -14,8 +19,8 @@ var configuration = Argument("configuration", "Release");
 // VERSION
 //////////////////////////////////////////////////////////////////////
 
-var version = "3.8.0";
-var displayVersion = "3.8.0";
+var version = "3.8.1";
+var displayVersion = "3.8.1";
 
 //////////////////////////////////////////////////////////////////////
 // NUGET PACKAGES
@@ -23,14 +28,14 @@ var displayVersion = "3.8.0";
 
 var CONSOLE_PACKAGES = new []
 {
-  "NUnit.ConsoleRunner"
+  "NUnit.ConsoleRunner.Edlund"
 };
 
 var EXTENSION_PACKAGES = new []
 {
   "NUnit.Extension.VSProjectLoader",
   "NUnit.Extension.NUnitProjectLoader",
-  "NUnit.Extension.NUnitV2Driver",
+  "NUnit.Extension.NUnitV2Driver.Edlund",
   "NUnit.Extension.NUnitV2ResultWriter",
   "NUnit.Extension.TeamCityEventListener"
 };

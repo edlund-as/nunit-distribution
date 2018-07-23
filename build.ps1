@@ -10,6 +10,7 @@ The build script target to run.
 The build configuration to use.
 .PARAMETER Verbosity
 Specifies the amount of information to be displayed.
+Specifies the amount of information to be displayed.
 .PARAMETER WhatIf
 Performs a dry run of the build script.
 No tasks will be executed.
@@ -31,9 +32,9 @@ Param(
     [string[]]$ScriptArgs
 )
 
-$CakeVersion = "0.17.0"
+$CakeVersion = "0.25.0"
 $DotNetChannel = "preview";
-$DotNetVersion = "1.0.0-preview2-003121";
+$DotNetVersion = "2.1.4"; #"1.0.0-preview2-003121";
 $DotNetInstallerUri = "https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0-preview2/scripts/obtain/dotnet-install.ps1";
 $NugetUrl = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
 

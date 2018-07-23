@@ -37,6 +37,8 @@
             <Component Id="NUNIT.2.CORE" Location="local" Guid="3D13540C-83E0-463A-8FD1-BE2A3248E2EC">
                 <File Id="nunit.core.dll"
                       Source="$(var.InstallImage)addins\nunit.core.dll" />
+                <File Id="nunit.framework.dll"
+                      Source="$(var.InstallImage)addins\nunit.framework.dll" />
             </Component>
             <Component Id="NUNIT.2.CORE.INTERFACES" Location="local" Guid="A09CA3D7-1D35-436C-A899-E1364B1E7AFD">
                 <File Id="nunit.core.interfaces.dll"
